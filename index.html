@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitez Sports - Product Catalogue</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            flex: 1;
+            background: #2c2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+        
+        .contents-section {
+            flex: 1;
+            padding: 60px 80px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+        
+        .nav-instruction {
+            position: absolute;
+            top: 40px;
+            right: 80px;
+            font-size: 0.9rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .nav-button {
+            background: #f0f0f0;
+            border: none;
+            padding: 25px 30px;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #1a1a1a;
+        }
+        
+        .nav-button:hover {
+            background: #e0e0e0;
+            transform: translateX(5px);
+        }
+        
+        .nav-button.primary {
+            background: #1a1a1a;
+            color: white;
+            grid-column: span 2;
+        }
+        
+        .nav-button.primary:hover {
+            background: #333;
+        }
+        
+        .arrow {
+            font-size: 1.5rem;
+        }
+        
+        .footer-note {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .footer-logo {
+            width: 80px;
+        }
+        
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .contents-section {
+                padding: 40px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-instruction {
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <img src="images/v2_0729cbf4-1a13-4106-a808-308a4adb2c12.jpg" alt="Elitez Sports" class="hero-image">
+        </div>
+        
+        <div class="contents-section">
+            <img src="logo.png" alt="Elitez Sports" class="logo">
+            
+            <div class="nav-instruction">
+                CLICK THE BUTTON TO NAVIGATE ↓
+            </div>
+            
+            <h1>Contents</h1>
+            
+            <div class="nav-grid">
+                <button class="nav-button primary" onclick="window.location.href='how-to-order.html'">
+                    How to order
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='rugby-league.html'">
+                    Rugby League
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='training-outerwear.html'">
+                    Training & Outerwear
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='rugby-union.html'">
+                    Rugby Union
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='accessories.html'">
+                    Accessories
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='soccer.html'">
+                    Football
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='size-chart.html'">
+                    Size Chart
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='afl.html'">
+                    AFL
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='contact.html'">
+                    Contact
+                    <span class="arrow">›</span>
+                </button>
+                
+                <button class="nav-button" onclick="window.location.href='basketball.html'">
+                    Basketball
+                    <span class="arrow">›</span>
+                </button>
+            </div>
+            
+            <div class="footer-note">
+                <img src="logo.png" alt="Elitez Sports" class="footer-logo">
+                <span>CLICK THE LOGO TO RETURN TO THIS PAGE</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

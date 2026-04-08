@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFL - Elitez Sports</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: white; }
+        .header { position: fixed; top: 0; left: 0; right: 0; background: white; padding: 20px 60px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo { width: 120px; cursor: pointer; }
+        .hero { height: 60vh; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); display: flex; align-items: center; justify-content: center; margin-top: 80px; position: relative; overflow: hidden; }
+        .hero img { max-width: 500px; max-height: 80%; object-fit: contain; z-index: 2; }
+        .hero h1 { position: absolute; top: 60px; left: 60px; font-size: 4rem; color: white; font-weight: 900; }
+        .content { max-width: 1400px; margin: 0 auto; padding: 80px 60px; }
+        .design-section { background: #f8f8f8; padding: 60px; border-radius: 20px; margin-bottom: 80px; }
+        .design-header { font-size: 2.5rem; font-weight: 900; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; }
+        .design-icons { display: flex; gap: 15px; }
+        .icon { width: 50px; height: 50px; background: #1a1a1a; border-radius: 50%; }
+        .design-text { font-size: 1.1rem; color: #666; margin-bottom: 40px; }
+        .upgrades { background: white; padding: 30px; border-radius: 12px; }
+        .upgrades h3 { font-size: 1.5rem; margin-bottom: 20px; font-style: italic; }
+        .upgrades ul { list-style: none; font-size: 1.1rem; line-height: 2; }
+        .upgrades li:before { content: "• "; font-weight: bold; margin-right: 10px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 60px; }
+        .product-card { text-align: center; }
+        .product-image { background: #f8f8f8; padding: 40px; border-radius: 20px; margin-bottom: 20px; }
+        .product-image img { width: 100%; height: auto; }
+        .product-name { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; }
+        .product-tag { color: #666; font-size: 0.95rem; font-style: italic; }
+        .footer { background: #1a1a1a; color: white; padding: 60px; text-align: center; }
+        .footer-logo { width: 150px; margin-bottom: 30px; filter: brightness(0) invert(1); }
+        .contact-info { font-size: 1.1rem; line-height: 2; }
+        .contact-info a { color: white; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Elitez Sports" class="logo" onclick="window.location.href='index.html'">
+    </div>
+    
+    <div class="hero">
+        <h1>AFL</h1>
+        <img src="images/Elite_AFL_Jersy.png" alt="AFL">
+    </div>
+    
+    <div class="content">
+        <div class="design-section">
+            <div class="design-header">
+                DESIGN YOUR OWN
+                <div class="design-icons">
+                    <svg class="icon" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="red"/><circle cx="50" cy="50" r="20" fill="orange"/><circle cx="50" cy="50" r="10" fill="yellow"/></svg>
+                    <svg class="icon" viewBox="0 0 100 100"><rect x="20" y="40" width="60" height="8" fill="white"/><rect x="40" y="20" width="8" height="60" fill="white"/></svg>
+                </div>
+            </div>
+            <p class="design-text">Choose your design, then customise with sublimated colours, logos and embellishments.</p>
+            <div class="upgrades">
+                <h3>OPTIONAL UPGRADES</h3>
+                <ul>
+                    <li>CUSTOM GRIPPER</li>
+                    <li>SOFT GPS POCKET</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"><img src="images/Elite_AFL_Jersy.png" alt="AFL Guernsey"></div>
+                <div class="product-name">AFL Guernsey</div>
+                <div class="product-tag">Popular in AFL</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/AFL_Shorts.png" alt="AFL Shorts"></div>
+                <div class="product-name">AFL Shorts</div>
+                <div class="product-tag">Popular in AFL</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/AFL_Game_Socks.png" alt="Game Socks"></div>
+                <div class="product-name">Game Socks</div>
+                <div class="product-tag">Popular in AFL</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/AFL_Grip_Socks.png" alt="Grip Socks"></div>
+                <div class="product-name">Grip Socks</div>
+                <div class="product-tag">Popular in AFL</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <img src="logo.png" alt="Elitez Sports" class="footer-logo">
+        <div class="contact-info">
+            <div><a href="mailto:sales@elitezsupply.com.au">sales@elitezsupply.com.au</a></div>
+            <div><a href="tel:0450088578">0450 088 578</a></div>
+            <div><a href="https://elitezsports.com.au" target="_blank">elitezsports.com.au</a></div>
+        </div>
+    </div>
+</body>
+</html>
